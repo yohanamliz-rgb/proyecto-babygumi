@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyGumi | Tejidos con Amor 🧶</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <!-- AQUÍ VA TU IMAGEN -->
+        <img src="img/BabyGumi (1).png" alt="Logo BabyGumi" class="brand-logo">
+        <h1 id="brand-name">BabyGumi</h1>
+        <p>Hecho con amor en Tucumán</p>
+    </div>
+    <!-- ... resto del nav ... -->
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#personalizar">Personalizar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <span>🛒 Carrito: <b id="cart-count">0</b></span>
+            <button id="theme-toggle" style="margin-left:15px">Modo Noche 🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="section-padding">
+            <h2>Bienvenidos al mundo de BabyGumi</h2>
+            <p>Accesorios únicos tejidos a crochet para los más pequeños.</p>
+        </section>
+
+        <section id="personalizar">
+            <h3>¡Queremos conocerte!</h3>
+            <p>¿Cómo se llama tu bebé?</p>
+            <input type="text" id="input-baby" placeholder="Escribe su nombre aquí...">
+            <div id="greeting-area" style="height: 30px; margin-top: 10px; font-weight: bold; color: var(--secondary);"></div>
+        </section>
+
+        <section id="catalogo" class="section-padding">
+            <h2 class="section-title">Nuestras Creaciones Mágicas ✨</h2>
+
+            <!-- ANIMALITOS -->
+            <div class="category-container">
+                <h3 class="category-header">🐾 Animalitos</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="img/muñecos/osita2.jpg" alt="Osita" class="product-img">
+                        <h4>Osita tejida</h4>
+                        <p>$30000</p>
+                        <button class="add-to-cart" data-price="30000" data-name="Osita">Añadir 🛒</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/muñecos/coneja dor.jpg" alt="Conejita" class="product-img">
+                        <h4>Conejita Soft</h4>
+                        <p>$28000</p>
+                        <button class="add-to-cart" data-price="28000" data-name="Conejita">Añadir 🛒</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/muñecos/hipo bailarina.jpg" alt="Hipopótamo" class="product-img">
+                        <h4>Hipopótamo bailarina</h4>
+                        <p>$30000</p>
+                        <button class="add-to-cart" data-price="30000" data-name="Hipopótamo">Añadir 🛒</button>
+                    </article>
+                </div>
+            </div>
+
+            <!-- PERSONAJES -->
+            <div class="category-container">
+                <h3 class="category-header">🎭 Personajes</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="img/personajes/personaje principito.jpg" alt="El Principito" class="product-img">
+                        <h4>Principito Amigurumi</h4>
+                        <p>$37000</p>
+                        <button class="add-to-cart" data-price="37000" data-name="El Principito">Añadir 🛒</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/personajes/person flash.jpg" alt="Flash" class="product-img">
+                        <h4>SuperHéroe Flash</h4>
+                        <p>$35000</p>
+                        <button class="add-to-cart" data-price="35000" data-name="Flash">Añadir 🛒</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/personajes/personaje2.jpg" alt="Rapunzel" class="product-img">
+                        <h4>Rapunzel</h4>
+                        <p>$40000</p>
+                        <button class="add-to-cart" data-price="40000" data-name="Rapunzel">Añadir 🛒</button>
+                    </article>
+                </div>
+            </div>
+
+            <!-- PORTACHUPETES -->
+            <div class="category-container">
+                <h3 class="category-header">👶 Portachupetes</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="img/portachupetes/portach1.jpg" alt="Portachupete" class="product-img">
+                        <h4>Rosa y Natural</h4>
+                        <p>$13000</p>
+                        <button class="add-to-cart" data-price="13000" data-name="Portachupete Rosa">Añadir 🛒</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/portachupetes/portachtejido.jpg" alt="Tejido" class="product-img">
+                        <h4>Tira Tejida</h4>
+                        <p>$8000</p>
+                        <button class="add-to-cart" data-price="8000" data-name="Portachupete Tejido">Añadir 🛒</button>
+                    </article>
+                </div>
+            </div>
+
+            <!-- SONAJEROS -->
+            <div class="category-container">
+                <h3 class="category-header">🔔 Sonajeros</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="img/portachupetes/sonajero2.jpg" alt="Sonajero" class="product-img">
+                        <h4>Sonajero Animalito</h4>
+                        <p>$15000</p>
+                        <button class="add-to-cart" data-price="15000" data-name="Sonajero">Añadir 🛒</button>
+                    </article>
+                </div>
+            </div>
+
+            <!-- KITS -->
+            <div class="category-container">
+                <h3 class="category-header">🎁 Kits Especiales</h3>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="img/kits/kitosita+sonaj.jpg" alt="Kit Osita" class="product-img">
+                        <h4>Kit Osita + Sonajero</h4>
+                        <p>$45000</p>
+                        <button class="add-to-cart" data-price="45000" data-name="Kit Osita">Añadir 🛒</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="shopping-cart">
+            <h3>Tu Pedido BabyGumi</h3>
+            <div id="cart-items">
+                <p>El carrito está vacío</p>
+            </div>
+            <hr style="border: 1px solid var(--card); margin: 20px 0;">
+            <p>Subtotal: $ <span id="subtotal">0</span></p>
+            <select id="payment-method">
+                <option value="card">Tarjeta (Precio Lista)</option>
+                <option value="transfer">Transferencia (-10% OFF)</option>
+            </select>
+            <h2 id="total-price">Total: $0</h2>
+            
+            <button id="btn-checkout" class="btn-buy" style="background-color: #25d366; color: white; margin-top: 20px; width: 100%; border: none; padding: 15px; border-radius: 20px; font-weight: bold; cursor: pointer;">
+                Finalizar Pedido por WhatsApp 📱
+            </button>
+        </section>
+
+        <section id="contacto" class="section-padding">
+            <h3>¿Consultas? ¡Escríbenos!</h3>
+            <form id="contact-form" style="display: flex; flex-direction: column; align-items: center;">
+                <input type="email" placeholder="Tu Email" required>
+                <textarea placeholder="Tu mensaje..." required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <p id="form-feedback" class="hidden" style="margin-top: 15px; color: var(--secondary);"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BabyGumi | Hecho con amor en Tucumán 🧶</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
